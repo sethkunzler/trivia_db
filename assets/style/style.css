@@ -1,8 +1,9 @@
 :root {
   --blue: #00236A;
   --yellow: #FCCF0E;
-  --grey-dark: #151421;
-  --grey-light: #B9B9B9;
+  --gray-dark: #151421;
+  ;
+  --gray-light: #B9B9B9;
 }
 /* #region theme */
 .blue {
@@ -11,11 +12,11 @@
 .yellow {
 color: var(--yellow)
 }
-.grey-dark {
-  color: var(--grey-dark)
+.gray-dark {
+  color: var(--gray-dark)
 }
-.grey-dark{
-  color: var(--grey-light)
+.gray-light{
+  color: var(--gray-light)
 }
 .bg-blue {
   background-color: var(--blue)
@@ -23,21 +24,39 @@ color: var(--yellow)
 .bg-yellow {
   background-color: var(--yellow)
 }
-.bg-grey-dark {
-  background-color: var(--grey-dark)
+.bg-gray-dark {
+  background-color: var(--gray-dark)
 }
-.bg-grey-dark{
-  background-color: var(--grey-light)
+.bg-gray-light{
+  background-color: var(--gray-light)
 }
 
+.border-yellow {
+  border: 1px solid var(--yellow);
+}
+.border-blue {
+  border: 1px solid var(--blue);
+}
+.border-gray-light {
+  border: 1px solid var(--gray-light);
+}
 
 /* #endregion */
 
 /* BASIC STYLES HERE */
+.logo-img {
+  max-height: 12vh;
+
+}
 
 .main-img {
   object-fit: cover;
-  object-position: center;
-  max-width: 50vh;
-  max-height: 50%;
+  object-position: top;
+  overflow: hidden;
+  width: 50vh;
+  max-height: 194px;
+  padding: 4px 24px;
+  border-radius: 16px;
+  background-color: var(--gray-light);
+  box-shadow: 5px 5px 12px var(--grey-dark);
 }

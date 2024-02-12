@@ -16,36 +16,42 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light px-2">
-      <a class="navbar-brand" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ml-2">My Trivia Game</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <!-- NAVLINKS -->
-          <a href="" class="nav-link"></a>
-        </div>
-      </div>
-      <div class="flex-grow-1 justify-content-end align-items-center d-flex" id="authstate"></div>
-    </nav>
+  <header class="bg-gray-dark shadow gray-light d-flex justify-content-center user-select-none p-2">
+    <img class="logo-img" src="assets/img/logo.png" alt="Trivia Logo">
   </header>
 
-  <main>
+  <main class="gray-light bg-blue">
 
     <section class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1>This is Your Question!</h1>
+      <div class="row justify-content-center my-2">
+        <div class="col-8 my-3 text-center user-select-none">
           <img class="main-img" src="https://images.unsplash.com/photo-1519401706-5cf17f6e70de?q=80&w=3648&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="crossroads">
         </div>
-        
+        <div class="col-8 py-2 text-center border-gray-light bg-gray-dark rounded user-select-none">
+          <h1>This is Your Question!</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center text-center my-3">
+        <div class="col-5 my-3">
+          <p class="p-3 selectable fs-4 border-gray-light shadow bg-gray-dark yellow rounded user-select-none" role="button">
+            A: <span class="gray-light">1</span>
+          </p>
+        </div>
+        <div class="col-5 my-3">
+          <p class="p-3 selectable fs-4 border-gray-light shadow bg-gray-dark yellow rounded user-select-none" role="button">
+            B: <span class="gray-light">2</span>
+          </p>
+        </div>
+        <div class="col-5 my-3">
+          <p class="p-3 selectable fs-4 border-gray-light shadow bg-gray-dark yellow rounded user-select-none" role="button">
+            C: <span class="gray-light">3</span>
+          </p>
+        </div>
+        <div class="col-5 my-3">
+          <p class="p-3 selectable fs-4 border-gray-light shadow bg-gray-dark yellow rounded user-select-none" role="button">
+            D: <span class="gray-light">4</span>
+          </p>
+        </div>
       </div>
     </section>
 
@@ -55,8 +61,9 @@
 
   </main>
 
-  <footer class="bg-dark text-light">
+  <footer class="bg-gray-dark gray-light">
     <div class="text-center no-select">
+      <p class="pt-3">The Trivia Game!</p>
       <p class="mb-0"><small>Made with 💖 by CodeWorks</small></p>
     </div>
   </footer>
