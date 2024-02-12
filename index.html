@@ -16,12 +16,15 @@
 </head>
 
 <body>
-  <header class="bg-gray-dark shadow gray-light d-flex justify-content-center user-select-none p-2">
+  <header class="bg-gray-dark shadow gray-light d-flex justify-content-around align-items-center user-select-none p-2">
     <img class="logo-img" src="assets/img/logo.png" alt="Trivia Logo">
+    <p class="fs-3">My Points: <span id="myPointsDisplay" class="yellow">0</span></p>
+    <p role="button" class="selectable rounded border-gray-light shadow gray-light px-3 py-2 fs-5">Give Me A Random Question!</p>
   </header>
 
   <main class="gray-light bg-blue">
 
+    <div id="questionContainerDisplay" class="">
     <!-- STUB this has been stubbed -->
     <!-- <section class="container"> -->
       <!-- <div class="row justify-content-center my-2">
@@ -54,7 +57,8 @@
           </p>
         </div>
       </div> -->
-    <!-- </section> -->
+      <!-- </section> -->
+    </div>
 
     <section id="router-view">
       <!-- primary viewport -->
